@@ -3907,3 +3907,56 @@ footer {
     padding-top: 180px;
   }
 }
+
+@media (max-width: 768px) {
+  /* Katta floating tugmalarni (ijtimoiy tarmoq) kichraytirish */
+  .social-sidebar {
+    width: 35px;
+  }
+  .social-sidebar a {
+    width: 35px;
+    height: 35px;
+  }
+  .social-sidebar a i {
+    min-width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  /* Chatbot tugmasini kichraytirish */
+  .chatbot {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  /* Maxsus imkoniyatlar tugmasini kichraytirish */
+  .a11y-toggle-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    left: 15px;
+    bottom: 15px;
+  }
+  
+  /* Til tanlash tugmalarini kichraytirish */
+  .navbar .lang-wrapper {
+    padding: 4px 8px !important;
+    gap: 5px !important;
+  }
+  .navbar .lang-flag {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .lang-select {
+    font-size: 12px !important;
+  }
+  
+  /* Menyu tugmalarini kichraytirish */
+  .nav-link, .dropbtn {
+    font-size: 12px !important;
+    padding: 6px 8px !important;
+  }
+}
