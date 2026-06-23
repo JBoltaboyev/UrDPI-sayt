@@ -1,0 +1,36 @@
+/* variables.css - Design tokens */
+:root {
+  /* Color palette */
+  --color-bg: #050816; /* dark background */
+  --color-bg-light: #1b6679; /* hero background */
+  --color-primary: #00f0ff; /* accent */
+  --color-primary-dark: #00d7e6;
+  --color-text: #ffffff;
+  --color-muted: #d1d1d1;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Transition */
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Dark mode fallback (if prefers-color-scheme) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #050816;
+    --color-bg-light: #1b6679;
+    --color-primary: #00f0ff;
+    --color-text: #ffffff;
+  }
+}

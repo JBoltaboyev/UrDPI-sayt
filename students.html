@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ses.urspi.uz</title>
+
+  <link rel="stylesheet" href="style.css?v=3.15">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+  </div>
+
+  <!-- MENYULAR -->
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Bosh sahifa</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown(event, 'school-drop')">
+        Oliy Maktab <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div id="school-drop" class="dropdown-content">
+        <a href="talim.html">Ta'lim</a>
+        <a href="students.html">Talabalar</a>
+        <a href="https://www.urspi.uz/uz.html" class="nav-link">Institut</a>
+        <a href="#">Rahbariyat</a>
+        <a href="#">Fakultetlar</a>
+        <a href="#">Bo‘limlar</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown(event, 'activity-drop')">
+        Faoliyat <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div id="activity-drop" class="dropdown-content">
+        <a href="xalqaro.html" data-i18n="nav_international">O‘quv Faoliyat</a>
+        <a href="xalqaro.html" data-i18n="nav_international">Ilmiy faoliyat</a>
+        <a href="xalqaro.html" data-i18n="nav_international">Yoshlar faoliyati</a>
+        <a href="xalqaro.html" data-i18n="nav_international">Xalqaro faoliyat</a>
+        <a href="konferensiya.html" data-i18n="nav_conference">Konferensiya</a>
+        <a href="https://hr.urspi.uz" data-i18n="nav_vacancy">Vakansiya</a>
+      </div>
+    </div>
+    <a href="aloqa.html" class="nav-link" data-i18n="nav_contact">Aloqa</a>
+  </nav>
+
+  <!-- O'NG TARAFTAGI TUGMA VA TIL -->
+  <div class="nav-right">
+    <a href="index.html"><button class="nav-btn">Boshlash</button></a>
+
+    <div class="lang-wrapper">
+      <i class="fa-solid fa-globe"></i>
+      <select class="lang-select">
+        <option value="uz">UZ</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+  <div class="test-mode-marquee">
+    <p>Sayt hozirda test rejimida ishlamoqda... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sayt hozirda test rejimida ishlamoqda... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sayt hozirda test rejimida ishlamoqda...</p>
+  </div>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Orqa fondagi harakatlanuvchi neon shulalar -->
+    <div class="neon-blob blob-1"></div>
+    <div class="neon-blob blob-2"></div>
+
+    <div class="hero-glass">
+      <div class="hero-left">
+        <h1>
+          <span class="neon-text">Talabalar</span>
+        </h1>
+
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS NAVBAR -->
+  <section class="quick-links-section">
+    <div class="quick-links-container">
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Rektorga murojaat</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-book-open-reader"></i>
+        <span>LMS</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-school-flag"></i>
+        <span>Akademik litsey</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <span>Korrupsiya</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-display"></i>
+        <span>Matbuot xizmati</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-users-gear"></i>
+        <span>Kadrlar bo'limi</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-headset"></i>
+        <span>Call Center</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-circle-play"></i>
+        <span>Video transferlar</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- STATS -->
+  <section class="stats">
+
+    <div class="card">
+      <h2>15K+</h2>
+      <p>Talabalar</p>
+    </div>
+
+    <div class="card">
+      <h2>120+</h2>
+      <p>Kurslar</p>
+    </div>
+
+    <div class="card">
+      <h2>98%</h2>
+      <p>Ishga joylashish</p>
+    </div>
+
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses">
+
+    <h2>Top Kurslar</h2>
+
+    <div class="course-grid">
+
+      <div class="course-card">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Artificial Intelligence</h3>
+        <p>AI va Machine Learning asoslari.</p>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Frontend Development</h3>
+        <p>HTML, CSS, JavaScript va React.</p>
+      </div>
+
+      <div class="course-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Cyber Security</h3>
+        <p>Zamonaviy himoya texnologiyalari.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AI & IT Yo'nalishlar -->
+  <section class="features">
+    <h2 class="section-title">Bizning Yo'nalishlar</h2>
+    <div class="grid-container">
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h3>Machine Learning</h3>
+        <p>Ma'lumotlar bilan ishlash va o'zi o'rganuvchi tizimlar yaratish.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Software Engineering</h3>
+        <p>Zamonaviy arxitekturalar asosida dasturiy ta'minot yaratish.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Cyber Security</h3>
+        <p>Axborot xavfsizligi va raqamli himoya texnologiyalari.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section class="news">
+    <h2 class="section-title">So‘nggi AI Yangiliklari</h2>
+
+    <div class="news-slider">
+      <div class="news-track">
+        <!-- 1-Yangilik -->
+        <div class="news-card">
+          <div class="news-image">
+            <img src="img/01.jpg" alt="News 1">
+          </div>
+          <div class="news-content">
+            <h3>OpenAI yangi model chiqardi</h3>
+            <p>Sun’iy intellekt texnologiyalari yana bir bosqichga ko‘tarildi...</p>
+          </div>
+        </div>
+
+        <!-- 2-Yangilik -->
+        <div class="news-card">
+          <div class="news-image">
+            <img src="img/02.jpg" alt="News 2">
+          </div>
+          <div class="news-content">
+            <h3>Google AI Search</h3>
+            <p>Google yangi AI qidiruv tizimini taqdim etdi...</p>
+          </div>
+        </div>
+
+        <!-- 3-Yangilik -->
+        <div class="news-card">
+          <div class="news-image">
+            <img src="img/03.jpg" alt="News 3">
+          </div>
+          <div class="news-content">
+            <h3>Robototexnika inqilobi</h3>
+            <p>Yangi avlod robotlari kundalik hayotga kirib kelmoqda...</p>
+          </div>
+        </div>
+
+        <!-- 4-Yangilik -->
+        <div class="news-card">
+          <div class="news-image">
+            <img src="img/04.jpg" alt="News 4">
+          </div>
+          <div class="news-content">
+            <h3>Nvidia yangi chiplari</h3>
+            <p>AI hisoblash quvvati 10 barobarga oshdi...</p>
+          </div>
+        </div>
+
+        </div>
+          </div>
+        </section>
+  <!-- ACCESSIBILITY BUTTON & PANEL -->
+  <div class="a11y-container">
+    <button class="a11y-toggle-btn" aria-label="Maxsus imkoniyatlar" id="a11yToggleBtn">
+      <i class="fa-solid fa-universal-access"></i>
+    </button>
+    <div class="a11y-panel" id="a11yPanel">
+      <div class="a11y-header">
+        <i class="fa-solid fa-universal-access"></i> Maxsus imkoniyatlar
+      </div>
+      <div class="a11y-body">
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-text-height"></i> Matn o'lchami</div>
+          <div class="a11y-controls">
+            <button class="a11y-btn" data-action="decrease-font">A-</button>
+            <button class="a11y-btn active" data-action="normal-font">A</button>
+            <button class="a11y-btn" data-action="increase-font">A+</button>
+          </div>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-circle-half-stroke"></i> Yuqori kontrast</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-contrast"><span class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-a"></i> Disleksiya shrifti</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-dyslexia"><span class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-link"></i> Havolalarni chizish</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-underline"><span
+              class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-pause"></i> Animatsiyani to'xtatish</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-animation"><span
+              class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-arrow-pointer"></i> Katta kursor</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-cursor"><span class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-regular fa-dot-circle"></i> Fokusni ajratish</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-focus"><span class="a11y-slider"></span></label>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <button id="a11y-reset" class="a11y-reset-btn"><i class="fa-solid fa-rotate-right"></i> Barchasini
+          tiklash</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHATBOT BUTTON -->
+  <button class="chatbot" aria-label="Open chatbot">
+    <i class="fa-solid fa-message" aria-hidden="true"></i>
+  </button>
+
+  <!-- Ijtimoiy tarmoqlar paneli -->
+  <div class="social-sidebar" aria-label="Social media links">
+    <a href="#" class="tg" aria-label="Telegram"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+    <a href="#" class="inst" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="#" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+    <a href="#" class="yt" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+  </div>
+
+
+  
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p class="footer-credits">Copyright by Boltaboyev ©2026</p>
+
+  </footer>
+
+
+  <script src="script.js?v=3.4"></script>
+
+</body>
+
+</html>

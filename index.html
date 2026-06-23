@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ses.urspi.uz</title>
+
+  <link rel="stylesheet" href="style.css?v=3.15">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="#"><img src="img/logo1.png" alt="Logo"></a>
+      <div class="logo-text">
+        <span class="logo-title" data-i18n="logo_title">Urganch Davlat Pedagogika Instituti</span>
+        <span class="logo-subtitle" data-i18n="logo_subtitle">Aniq fanlar pedagogika oliy maktabi</span>
+      </div>
+    </div>
+
+    <!-- MENYULAR -->
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link" data-i18n="nav_home">Bosh sahifa</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown(event, 'school-drop')">
+          <span data-i18n="nav_school">Oliy Maktab</span> <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div id="school-drop" class="dropdown-content">
+          <a href="talim.html" data-i18n="nav_docs">Hujjatlar</a>
+          <a href="https://www.urspi.uz" class="nav-link" data-i18n="nav_institute">Institut</a>
+          <a href="rahbar.html" data-i18n="nav_leadership">Rahbariyat</a>
+          <a href="fakultet.html" data-i18n="nav_faculties">Fakultetlar</a>
+          <a href="bulim.html" data-i18n="nav_departments">Bo‘limlar</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown(event, 'activity-drop')">
+          <span data-i18n="nav_activity">Faoliyat</span> <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div id="activity-drop" class="dropdown-content">
+          <a href="xalqaro.html" data-i18n="nav_international">O‘quv Faoliyat</a>
+          <a href="xalqaro.html" data-i18n="nav_international">Ilmiy faoliyat</a>
+          <a href="xalqaro.html" data-i18n="nav_international">Yoshlar faoliyati</a>
+          <a href="xalqaro.html" data-i18n="nav_international">Xalqaro faoliyat</a>
+          <a href="konferensiya.html" data-i18n="nav_conference">Konferensiya</a>
+          <a href="https://hr.urspi.uz" data-i18n="nav_vacancy">Vakansiya</a>
+        </div>
+      </div>
+      <a href="aloqa.html" class="nav-link" data-i18n="nav_contact">Aloqa</a>
+    </nav>
+
+    <!-- O'NG TARAFTAGI TUGMA VA TIL -->
+    <div class="nav-right">
+
+      <!-- Settings (gear) button -->
+
+
+      <div class="lang-wrapper">
+        <a href="#" class="lang-link" data-lang="uz"><img src="img/uz.svg" class="lang-flag" /> </a>
+        <a href="#" class="lang-link" data-lang="en"><img src="img/en.svg" class="lang-flag" /> </a>
+        <a href="#" class="lang-link" data-lang="ru"><img src="img/ru.svg" class="lang-flag" /> </a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <div class="test-mode-marquee">
+    <p>Sayt hozirda test rejimida ishlamoqda... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sayt hozirda test rejimida ishlamoqda... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sayt hozirda test rejimida ishlamoqda...</p>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Orqa fonda aylanuvchi video -->
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="img/UrDPI.mp4" type="video/mp4">
+    </video>
+
+    <!-- Orqa fondagi harakatlanuvchi neon shulalar -->
+    <div class="neon-blob blob-1"></div>
+    <div class="neon-blob blob-2"></div>
+
+    <div class="hero-glass">
+      <div class="hero-left">
+        <h2>
+          <span class="title-main" data-i18n="hero_title">Urganch Davlat Pedagogika Instituti</span>
+          <span data-i18n="hero_subtitle">Aniq Fanlar Pedagogika Oliy Maktabi</span>
+          <span class="neon-text">School of Exact Sciences</span>
+        </h2>
+
+        <p data-i18n="hero_desc">
+          Zamonaviy AI va Axborot Texnologiyalari
+          bo‘yicha dunyo standartidagi ta’lim platformasi.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://lms.urspi.uz"><button class="primary-btn" data-i18n="hero_teacher">O‘qituvchi</button></a>
+          <a href="https://lms.urspi.uz"><button class="secondary-btn" data-i18n="hero_student">Talaba</button></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS NAVBAR -->
+  <section class="quick-links-section">
+    <div class="quick-links-container">
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Rektorga murojaat</span>
+      </a>
+      <a href="https://lms.urspi.uz/" class="quick-link">
+        <i class="fa-solid fa-book-open-reader"></i>
+        <span>LMS</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-school-flag"></i>
+        <span>Akademik litsey</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <span>Korrupsiya</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-display"></i>
+        <span>Matbuot xizmati</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-users-gear"></i>
+        <span>Kadrlar bo'limi</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-headset"></i>
+        <span>Call Center</span>
+      </a>
+      <a href="#" class="quick-link">
+        <i class="fa-solid fa-circle-play"></i>
+        <span>Video transferlar</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ASOSIY QISMNI WRAPPER ICHIGA OLAMIZ (WORD SHABLON) -->
+  <main class="wrapper">
+    <div class="layout-container">
+      <div class="main-content">
+        <!-- COURSES -->
+        <section class="courses">
+
+          <h2 data-i18n="courses_title">Dars mashg‘ulotlari</h2>
+
+          <div class="course-grid">
+
+            <div class="course-card">
+              <img src="img/dars1.jpg" alt="AI kurs">
+              <h3 data-i18n="course_ai">Sun'iy intellekt</h3>
+            </div>
+
+            <div class="course-card">
+              <img src="img/dars2.jpg" alt="Frontend kurs">
+              <h3 data-i18n="course_it">Axborot texnologiyalari</h3>
+            </div>
+
+            <div class="course-card">
+              <img src="img/dars3.jpg" alt="Cyber Security kurs">
+              <h3 data-i18n="course_youth">Rahbar va yoshlar</h3>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ONLINE VIDEO DARSLAR -->
+        <section class="video-showcase">
+          <h2 class="section-title" data-i18n="video_title">Online video darslar</h2>
+          <div class="video-showcase-grid">
+            <div class="video-card">
+              <div class="video-wrapper">
+                <video id="showcaseVideo" poster="img/dars1.jpg">
+                  <source src="img/konf1.mp4" type="video/mp4">
+                </video>
+                <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="video-fullscreen-btn" id="videoFullscreenBtn" aria-label="Fullscreen video">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+              <h4 class="video-caption" data-i18n="video_caption">Online darslar</h4>
+            </div>
+            <div class="video-info-card">
+              <h3 data-i18n="video_info_title">Urganch davlat pedagogika instituti</h3>
+              <p data-i18n="video_info_desc">Urganch davlat pedagogika instituti Pedagogika oliy maktabida online
+                darslaridan lavha</p>
+              <a href="https://youtu.be/uxs3t6Vp2SE?si=PGd4qP1CQr4Wl5L8" class="video-link"
+                data-i18n="video_more">Batafsil
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI & IT Yo'nalishlar -->
+        <section class="features">
+          <h2 class="section-title" data-i18n="features_title">Bizning Yo'nalishlar</h2>
+          <div class="features-new-grid">
+            <div class="f-card">
+              <div class="f-card-inner"></div>
+              <h3 class="f-card-title">Matematika</h3>
+              <img src="img/math.png" class="f-card-img" alt="Math">
+              <div class="f-card-content">
+                <h3>Matematika</h3>
+                <p>Oliy matematika va mantiqiy fikrlashni rivojlantiruvchi chuqurlashtirilgan dasturlar.</p>
+                <button class="f-card-btn">Batafsil</button>
+              </div>
+            </div>
+            <div class="f-card">
+              <div class="f-card-inner"></div>
+              <h3 class="f-card-title">Sun'iy<br>Intellekt</h3>
+              <img src="img/ai.png" class="f-card-img" alt="AI">
+              <div class="f-card-content">
+                <h3>Sun'iy Intellekt</h3>
+                <p>Zamonaviy AI texnologiyalari va ularni amaliyotga tadbiq etish usullari.</p>
+                <button class="f-card-btn">Batafsil</button>
+              </div>
+            </div>
+            <div class="f-card">
+              <div class="f-card-inner"></div>
+              <h3 class="f-card-title">Axborot<br>Texnologiyasi</h3>
+              <img src="img/tech.png" class="f-card-img" alt="Tech">
+              <div class="f-card-content">
+                <h3>Axborot Texnologiyasi</h3>
+                <p>Eng so'nggi IT va dasturlash tillari bo'yicha amaliy va nazariy bilimlar.</p>
+                <button class="f-card-btn">Batafsil</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- NEWS SECTION -->
+        <section class="news">
+          <h2 class="section-title" data-i18n="news_title">So‘nggi Yangiliklari</h2>
+
+          <div class="news-slider">
+            <div class="news-track">
+              <!-- 1-Yangilik -->
+              <div class="news-card">
+                <div class="news-image">
+                  <img src="img/01.jpg" alt="News 1">
+                </div>
+                <div class="news-content">
+                  <h3>OpenAI yangi model chiqardi</h3>
+                  <div class="news-actions">
+                    <button class="primary-btn">Batafsil</button>
+                    <div class="reactions">
+                      <button class="reaction-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> </button>
+                      <button class="reaction-btn dislike-btn"><i class="fa-regular fa-thumbs-down"></i> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2-Yangilik -->
+              <div class="news-card">
+                <div class="news-image">
+                  <img src="img/11.jpg" alt="News 2">
+                </div>
+                <div class="news-content">
+                  <h3>Google AI Search</h3>
+                  <div class="news-actions">
+                    <button class="primary-btn">Batafsil</button>
+                    <div class="reactions">
+                      <button class="reaction-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> </button>
+                      <button class="reaction-btn dislike-btn"><i class="fa-regular fa-thumbs-down"></i> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3-Yangilik -->
+              <div class="news-card">
+                <div class="news-image">
+                  <img src="img/03.jpg" alt="News 3">
+                </div>
+                <div class="news-content">
+                  <h3>Robototexnika inqilobi</h3>
+                  <div class="news-actions">
+                    <button class="primary-btn">Batafsil</button>
+                    <div class="reactions">
+                      <button class="reaction-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> </button>
+                      <button class="reaction-btn dislike-btn"><i class="fa-regular fa-thumbs-down"></i> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4-Yangilik -->
+              <div class="news-card">
+                <div class="news-image">
+                  <img src="img/04.jpg" alt="News 4">
+                </div>
+                <div class="news-content">
+                  <h3>Xalqaro hamkorlik</h3>
+                  <div class="news-actions">
+                    <button class="primary-btn">Batafsil</button>
+                    <div class="reactions">
+                      <button class="reaction-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> </button>
+                      <button class="reaction-btn dislike-btn"><i class="fa-regular fa-thumbs-down"></i> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- SIDEBAR -->
+      <aside class="announcements-sidebar">
+        <h3 class="sidebar-title"><i class="fa-solid fa-bullhorn" style="color: #0d6efd;"></i> E'lonlar</h3>
+        <div class="announce-card">
+          <span class="date">12-Iyun, 2026</span>
+          <p>Tez kunda yangi AI markazi ochilishi kutilmoqda!</p>
+        </div>
+        <div class="announce-card">
+          <span class="date">15-Iyun, 2026</span>
+          <p>Chet ellik mutaxassislar bilan ochiq darslar jadvali e'lon qilindi.</p>
+        </div>
+        <div class="announce-card">
+          <span class="date">20-Iyun, 2026</span>
+          <p>Yozgi oromgohlar uchun yo'llanmalar tarqatilmoqda.</p>
+        </div>
+        <div class="announce-card">
+          <span class="date">22-Iyun, 2026</span>
+          <p>Yozgi oromgohlar uchun yo'llanmalar tarqatilmoqda.</p>
+        </div>
+        <div class="announce-card">
+          <span class="date">24-Iyun, 2026</span>
+          <p>Yozgi oromgohlar uchun yo'llanmalar tarqatilmoqda.</p>
+        </div>
+
+        <div class="announce-form"
+          style="margin-top: 30px; background: #ffffff; padding: 15px; border-radius: 8px; border-left: 4px solid #0b5ed7; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+          <h4 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 16px;"><i class="fa-solid fa-envelope"
+              style="color: #0d6efd; margin-right: 8px;"></i>Murojaat yo‘llash</h4>
+          <form style="display: flex; flex-direction: column; gap: 12px;">
+            <input type="text" placeholder="F.I.O"
+              style="width: 100%; padding: 10px; border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; font-size: 14px; box-sizing: border-box; color: #333; outline: none; transition: 0.3s;"
+              onfocus="this.style.borderColor='#0d6efd'" onblur="this.style.borderColor='rgba(0,0,0,0.1)'" required>
+            <input type="tel" placeholder="Tel:"
+              style="width: 100%; padding: 10px; border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; font-size: 14px; box-sizing: border-box; color: #333; outline: none; transition: 0.3s;"
+              onfocus="this.style.borderColor='#0d6efd'" onblur="this.style.borderColor='rgba(0,0,0,0.1)'" required>
+            <textarea placeholder="Xabar:"
+              style="width: 100%; padding: 10px; border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; font-size: 14px; box-sizing: border-box; height: 100px; resize: none; color: #333; outline: none; transition: 0.3s;"
+              onfocus="this.style.borderColor='#0d6efd'" onblur="this.style.borderColor='rgba(0,0,0,0.1)'"
+              required></textarea>
+            <button type="submit" class="primary-btn"
+              style="width: 100%; padding: 10px; display: flex; justify-content: center; font-size: 14px;">Yuborish <i
+                class="fa-solid fa-paper-plane" style="margin-left: 8px; margin-top: 2px;"></i></button>
+          </form>
+        </div>
+
+        <div class="teachers-widget"
+          style="margin-top: 30px; background: #ffffff; padding: 15px; border-radius: 8px; border-left: 4px solid #0b5ed7; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+          <h4 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 16px;"><i
+              class="fa-solid fa-chalkboard-user" style="color: #0d6efd; margin-right: 8px;"></i>Bizning Ustozlar</h4>
+
+          <div class="teacher-item">
+            <img src="img/t2.jpg" alt="Teacher">
+            <div class="teacher-info">
+              <h5>Dilshodbek Yuldashev</h5>
+              <span>Professor, PhD</span>
+            </div>
+          </div>
+
+          <div class="teacher-item">
+            <img src="img/t1.jpg" alt="Teacher">
+            <div class="teacher-info">
+              <h5>Jamshid Boltaboyev</h5>
+              <span>Dotsent</span>
+            </div>
+          </div>
+
+          <div class="teacher-item">
+            <img src="img/t3.jpg" alt="Teacher">
+            <div class="teacher-info">
+              <h5>Azizbek Marimov</h5>
+              <span>PhD</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <!-- ACCESSIBILITY BUTTON & PANEL -->
+  <div class="a11y-container">
+    <button class="a11y-toggle-btn" aria-label="Maxsus imkoniyatlar" id="a11yToggleBtn">
+      <i class="fa-solid fa-universal-access"></i>
+    </button>
+    <div class="a11y-panel" id="a11yPanel">
+      <div class="a11y-header">
+        <i class="fa-solid fa-universal-access"></i> Maxsus imkoniyatlar
+      </div>
+      <div class="a11y-body">
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-text-height"></i> Matn o'lchami</div>
+          <div class="a11y-controls">
+            <button class="a11y-btn" data-action="decrease-font">A-</button>
+            <button class="a11y-btn active" data-action="normal-font">A</button>
+            <button class="a11y-btn" data-action="increase-font">A+</button>
+          </div>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-circle-half-stroke"></i> Yuqori kontrast</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-contrast"><span class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-a"></i> Disleksiya shrifti</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-dyslexia"><span class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-link"></i> Havolalarni chizish</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-underline"><span
+              class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-pause"></i> Animatsiyani to'xtatish</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-animation"><span
+              class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-solid fa-arrow-pointer"></i> Katta kursor</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-cursor"><span class="a11y-slider"></span></label>
+        </div>
+        <div class="a11y-row">
+          <div class="a11y-label"><i class="fa-regular fa-dot-circle"></i> Fokusni ajratish</div>
+          <label class="a11y-switch"><input type="checkbox" id="a11y-focus"><span class="a11y-slider"></span></label>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <button id="a11y-reset" class="a11y-reset-btn"><i class="fa-solid fa-rotate-right"></i> Barchasini
+          tiklash</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHATBOT BUTTON -->
+  <button class="chatbot" aria-label="Open chatbot">
+    <i class="fa-solid fa-message" aria-hidden="true"></i>
+  </button>
+
+  <!-- CHAT WINDOW -->
+  <div class="chat-window" id="chatWindow" style="display: none;">
+    <div class="chat-header">
+      <h3 data-i18n="chat_title">Aloqa markazi</h3>
+      <button id="closeChat">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="bot-msg">Assalomu alaykum! Bizga qanday savolingiz bor?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Xabaringizni yozing...">
+      <button id="sendChat"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+
+
+
+  <!-- Ijtimoiy tarmoqlar paneli -->
+  <div class="social-sidebar" aria-label="Social media links">
+    <a href="http://t.me/UrDPI_UZ" class="tg" aria-label="Telegram"><i class="fab fa-telegram-plane"
+        aria-hidden="true"></i></a>
+    <a href="http://instagram.com/urspi.uz" class="inst" aria-label="Instagram"><i class="fab fa-instagram"
+        aria-hidden="true"></i></a>
+    <a href="http://www.facebook.com/profile.php?id=100086658245368" class="fb" aria-label="Facebook"><i
+        class="fab fa-facebook-f" aria-hidden="true"></i></a>
+    <a href="http://youtube.com/@urganchdavlatpedagogikains1620/videos" class="yt" aria-label="YouTube"><i
+        class="fab fa-youtube" aria-hidden="true"></i></a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <section class="contact-section">
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8202.577435549249!2d60.611717579869584!3d41.56866095127826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1666248403366!5m2!1sru!2s"
+          width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contact-info">
+        <p><strong>Manzil:</strong> Oʻzbekiston, 220100, Urganch shahri, Gurlan koʻchasi, 1-A uy</p>
+        <p><strong>Rektor:</strong> Abdullayev Diyorjon Nodirjon o‘g‘li</p>
+        <p><strong>Yoshlar masalalari va ma’naviy-marifiy ishlar bo‘yicha birinchi prorektori:</strong> Xo‘jamuratov
+          Umarjon Rustamovich
+        </p>
+        <p><strong>O'quv ishlari bo'yicha prorektor:</strong> Allanazarov Sirojbek Bekchan o‘g‘li</p>
+        <p><strong>E-mail:</strong> study_info@urspi.uz</p>
+        <p><strong>Telefon:</strong> +998 97 123-45-67</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="http://t.me/UrDPI_UZ" class="social-btn tg"><i class="fab fa-telegram-plane"></i>
+          <span>Telegram</span></a>
+        <a href="http://instagram.com/urspi.uz" class="social-btn inst"><i class="fab fa-instagram"></i>
+          <span>Instagram</span></a>
+        <a href="http://www.facebook.com/profile.php?id=100086658245368" class="social-btn fb"><i
+            class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+        <a href="http://youtube.com/@urganchdavlatpedagogikains1620/videos" class="social-btn yt"><i
+            class="fab fa-youtube"></i> <span>YouTube</span></a>
+      </div>
+    </section>
+
+    <p class="footer-credits">Copyright by Boltaboyev ©2026</p>
+
+  </footer>
+
+
+  <script src="script.js?v=3.4"></script>
+
+</body>
+
+</html>
