@@ -3684,3 +3684,226 @@ footer {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* =========================================
+   COMPREHENSIVE RESPONSIVE DESIGN FIXES
+   For Mobile and Tablet Devices
+========================================= */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 5%;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .nav-menu {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav-right {
+    order: 2;
+  }
+  .hero-glass {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px;
+  }
+  .logo img {
+    height: 40px;
+  }
+  .logo-title {
+    font-size: 12px;
+    white-space: normal;
+  }
+  .logo-subtitle {
+    font-size: 11px;
+    white-space: normal;
+  }
+  .nav-link, .dropbtn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 140px 20px 40px 20px; /* Account for wrapped navbar */
+    min-height: auto;
+  }
+  .hero-glass {
+    padding: 30px 15px;
+  }
+  .hero-left h2 {
+    font-size: 28px;
+  }
+  .title-main {
+    font-size: 24px;
+    white-space: normal;
+  }
+  .neon-text {
+    font-size: 20px;
+  }
+  .hero-left p {
+    font-size: 15px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .primary-btn, .secondary-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  /* Quick Links */
+  .quick-links-container {
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+  .quick-link {
+    min-width: 90px;
+    padding: 5px;
+  }
+  .quick-link i {
+    font-size: 24px;
+  }
+  .quick-link span {
+    font-size: 11px;
+  }
+  
+  /* Main Content Layout */
+  .wrapper {
+    padding: 15px;
+  }
+  
+  /* Courses Grid */
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .courses h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Video Showcase */
+  .video-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .video-showcase h2 {
+    font-size: 28px;
+  }
+  
+  /* Features / Yo'nalishlar */
+  .features {
+    padding: 2rem 1rem;
+  }
+  .features-new-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .f-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* News Section */
+  .news-slider {
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+  .news-track {
+    animation: none; /* Stop animation on mobile for better usability */
+  }
+  .news-card {
+    width: 280px;
+  }
+  
+  /* Announcements Sidebar */
+  .announcements-sidebar {
+    margin-top: 30px;
+  }
+  
+  /* Footer */
+  .contact-section {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .contact-map {
+    width: 100%;
+    min-width: auto;
+  }
+  .contact-info {
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-social {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social-btn {
+    width: 45px;
+  }
+  .social-btn:hover {
+    width: 45px;
+  }
+  .social-btn span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra Small Devices */
+  .nav-menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-link, .dropbtn {
+    width: 100%;
+    justify-content: center;
+  }
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  .title-main {
+    font-size: 20px;
+  }
+  .neon-text {
+    font-size: 18px;
+  }
+  .hero-glass {
+    padding: 20px 10px;
+  }
+  .logo img {
+    height: 35px;
+  }
+  .logo-title {
+    font-size: 11px;
+  }
+  .hero {
+    padding-top: 180px;
+  }
+}
