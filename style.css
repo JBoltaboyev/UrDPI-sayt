@@ -3916,11 +3916,16 @@ footer {
   .social-sidebar a {
     width: 35px;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .social-sidebar a i {
-    min-width: 35px;
-    height: 35px;
+    min-width: unset;
+    height: auto;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
   }
   
   /* Chatbot tugmasini kichraytirish */
@@ -3932,13 +3937,15 @@ footer {
     bottom: 15px;
   }
   
-  /* Maxsus imkoniyatlar tugmasini kichraytirish */
+  /* Maxsus imkoniyatlar tugmasini kichraytirish va chat bot yoniga qo'yish */
+  .a11y-container {
+    right: 70px; /* Chat botdan biroz chapda */
+    bottom: 15px;
+  }
   .a11y-toggle-btn {
     width: 45px;
     height: 45px;
     font-size: 20px;
-    left: 15px;
-    bottom: 15px;
   }
   
   /* Til tanlash tugmalarini kichraytirish */
@@ -3954,9 +3961,12 @@ footer {
     font-size: 12px !important;
   }
   
-  /* Menyu tugmalarini kichraytirish */
+  /* Menyu tugmalarini kichraytirish va ramkani tenglashtirish */
   .nav-link, .dropbtn {
-    font-size: 12px !important;
-    padding: 6px 8px !important;
+    font-size: 13px !important;
+    padding: 8px 10px !important;
+  }
+  .dropdown {
+    width: 100%;
   }
 }
